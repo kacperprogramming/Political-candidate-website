@@ -8,7 +8,11 @@
 }
 
 .section-padding {
-	padding: variables.$space-8 variables.$space-5;
+	padding: variables.$space-6 variables.$space-5;
+
+    @media (min-width: 768px) {
+        padding: variables.$space-8 variables.$space-5;
+    }
 }
 
 .section-title {

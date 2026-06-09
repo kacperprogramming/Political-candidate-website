@@ -5,7 +5,12 @@
 }
 
 .section-padding {
-  padding: 6.4em 2.4em;
+  padding: 3.2em 2.4em;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6.4em 2.4em;
+  }
 }
 
 .section-title {
@@ -48,6 +53,7 @@ html {
 body {
   font-size: 1.4rem;
   font-family: "Google Sans", sans-serif;
+  line-height: 1.5;
 }
 
 a {
@@ -314,6 +320,53 @@ main .program__card-title {
   font-size: 1.6rem;
   margin-bottom: 0.3em;
 }
-main .program__card-info {
-  line-height: 1.5;
+main .aboutme__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .aboutme__picture-container {
+  position: relative;
+}
+main .aboutme__blob {
+  position: absolute;
+  top: 133px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: #FF0000;
+  border-radius: 60% 40% 70% 30%/50% 60% 40% 50%;
+  z-index: -1;
+}
+main .aboutme__img {
+  z-index: 1;
+  width: 200px;
+}
+main .aboutme__content {
+  margin-top: 2.4em;
+}
+main .aboutme__title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 0.4em;
+}
+@media (min-width: 968px) {
+  main .aboutme__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5em;
+  }
+  main .aboutme__picture-container {
+    width: 100%;
+  }
+  main .aboutme__img {
+    width: 350px;
+  }
+  main .aboutme__title {
+    font-size: 2.4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
