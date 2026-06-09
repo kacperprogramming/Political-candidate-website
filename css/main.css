@@ -4,6 +4,34 @@
   max-width: 1200px;
 }
 
+.section-padding {
+  padding: 6.4em 2.4em;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 1.6em;
+}
+@media (min-width: 552px) {
+  .section-title {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.8rem;
+  }
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+  color: #FF0000;
+}
+
 *,
 *::after,
 *::before {
@@ -90,14 +118,15 @@ table {
   gap: 0.5em;
 }
 .header__button {
-  color: #000;
+  display: inline-block;
   padding: 0.8em 1.6em;
   border-radius: 1.2em;
+  transition: background-color 0.2s;
+  color: #000;
 }
 .header .contact-button {
   color: #fff;
   background-color: #FF0000;
-  transition: background-color 0.1s;
 }
 .header .contact-button:hover {
   background-color: #CC0000;
@@ -105,6 +134,9 @@ table {
 .header .program-button {
   background: none;
   border: 1px solid #000;
+}
+.header .program-button:hover {
+  background-color: #f0f0f0;
 }
 @media (min-width: 572px) {
   .header__title {
@@ -120,7 +152,6 @@ table {
 @media (min-width: 992px) {
   .header {
     background: linear-gradient(to bottom, white 50%, red 50%);
-    justify-content: flex-start;
   }
   .header__content {
     padding: 2em;
@@ -197,6 +228,7 @@ table {
   pointer-events: none;
   list-style-type: none;
   background-color: #fff;
+  border-bottom: 1px solid rgb(157, 157, 157);
 }
 .nav__links li {
   padding: 1em 2em;
@@ -240,6 +272,7 @@ table {
     left: auto;
     opacity: 1;
     pointer-events: all;
+    border-bottom: none;
   }
   .nav .nav__links li {
     padding: 0 1em;
@@ -250,4 +283,37 @@ table {
   .nav .nav__link {
     font-size: 1.5rem;
   }
+}
+
+main .program__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+@media (min-width: 552px) {
+  main .program__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  main .program__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+main .program__card {
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  padding: 2em;
+}
+main .program__card-number {
+  display: block;
+  font-size: 3.6rem;
+  margin-bottom: 0.2em;
+}
+main .program__card-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.3em;
+}
+main .program__card-info {
+  line-height: 1.5;
 }/*# sourceMappingURL=main.css.map */

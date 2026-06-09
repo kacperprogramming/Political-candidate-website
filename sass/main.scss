@@ -98,15 +98,16 @@ table {
 	}
 
 	&__button {
-		color: colors.$pure-black;
+		display: inline-block;
 		padding: variables.$space-2 variables.$space-4;
 		border-radius: variables.$space-3;
+		transition: background-color 0.2s;
+		color: colors.$pure-black;
 	}
 
 	.contact-button {
 		color: colors.$pure-white;
 		background-color: colors.$main-color;
-		transition: background-color 0.1s;
 
 		&:hover {
 			background-color: colors.$second-color;
@@ -116,6 +117,10 @@ table {
 	.program-button {
 		background: none;
 		border: 1px solid colors.$pure-black;
+
+		&:hover {
+			background-color: colors.$light-gray;
+		}
 	}
 
 	@media (min-width: 572px) {
@@ -134,7 +139,6 @@ table {
 
 	@media (min-width: 992px) {
 		background: linear-gradient(to bottom, white 50%, red 50%);
-		justify-content: flex-start;
 
 		&__content {
 			padding: 2em;
@@ -221,6 +225,7 @@ table {
 		pointer-events: none;
 		list-style-type: none;
 		background-color: #fff;
+		border-bottom: 1px solid colors.$gray;
 
 		li {
 			padding: 1em 2em;
@@ -273,19 +278,59 @@ table {
 				left: auto;
 				opacity: 1;
 				pointer-events: all;
+				border-bottom: none;
 
-                li {
-                    padding: 0 1em;
-                }
+				li {
+					padding: 0 1em;
+				}
 
 				li + li {
 					border: none;
 				}
 			}
 
-            &__link {
-                font-size: 1.5rem;
-            }
+			&__link {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+main {
+	.program {
+		&__cards {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2em;
+
+			@media (min-width: 552px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (min-width: 768px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+
+		&__card {
+			background-color: colors.$light-gray;
+			border-radius: 30px;
+			padding: 2em;
+
+			&-number {
+				display: block;
+				font-size: 3.6rem;
+				margin-bottom: 0.2em;
+			}
+
+			&-title {
+				font-size: 1.6rem;
+				margin-bottom: 0.3em;
+			}
+
+			&-info {
+				line-height: 1.5;
+			}
 		}
 	}
 }
