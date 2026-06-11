@@ -387,6 +387,10 @@ main .news__box-img {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s;
+}
+main .news__box-img:hover {
+  transform: scale(1.03);
 }
 main .news__box-content {
   padding: 2em;
@@ -409,5 +413,52 @@ main .news__box a:hover {
 @media (min-width: 768px) {
   main .news__boxes {
     flex-direction: row;
+  }
+}
+main .news .section-padding {
+  padding: 10em 2.4em;
+}
+main .newsletter {
+  background-color: #f0f0f0;
+}
+main .newsletter .section-title {
+  margin-bottom: 0.5em;
+}
+main .newsletter__info {
+  text-align: center;
+}
+main .newsletter__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-top: 1.6em;
+}
+main .newsletter__input {
+  width: 100%;
+  padding: 0.8em 0.8em;
+  border-radius: 30px;
+  border: none;
+}
+main .newsletter__button {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 0.8em 1.6em;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+main .newsletter__button:hover {
+  background-color: #CC0000;
+}
+@media (min-width: 768px) {
+  main .newsletter__info {
+    font-size: 1.6rem;
+  }
+  main .newsletter__box {
+    flex-direction: row;
+  }
+  main .newsletter__input {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
