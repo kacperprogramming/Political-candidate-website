@@ -369,4 +369,45 @@ main .aboutme__title {
   main .aboutme__title {
     font-size: 2.4rem;
   }
+}
+main .news__boxes {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+main .news__box {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+main .news__box-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .news__box-content {
+  padding: 2em;
+}
+main .news__box-date {
+  margin-bottom: 0.5em;
+}
+main .news__box-title {
+  margin-bottom: 0.2em;
+}
+main .news__box-text {
+  margin-bottom: 0.5em;
+}
+main .news__box a {
+  color: rgb(48, 111, 220);
+}
+main .news__box a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  main .news__boxes {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
