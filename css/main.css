@@ -461,4 +461,42 @@ main .newsletter__button:hover {
   main .newsletter__input {
     width: 30%;
   }
+}
+main .contact {
+  background-color: rgb(225, 225, 225);
+}
+main .contact__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .contact__box-input {
+  width: 100%;
+}
+main .contact input, main .contact textarea, main .contact button {
+  margin-top: 1em;
+  padding: 1em 1em;
+  border-radius: 30px;
+  border: none;
+}
+main .contact textarea {
+  width: 100%;
+  min-height: 100px;
+}
+main .contact__button {
+  min-width: 130px;
+  width: 30%;
+  color: #fff;
+  background-color: #FF0000;
+  transition: background-color 0.3s;
+}
+main .contact__button:hover {
+  background-color: #CC0000;
+}
+@media (min-width: 768px) {
+  main .contact__box {
+    flex-direction: row;
+    gap: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */

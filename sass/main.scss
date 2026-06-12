@@ -507,4 +507,50 @@ main {
 			}
 		}
 	}
+
+	.contact {
+		background-color: rgb(225, 225, 225);
+
+		&__box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+            &-input {
+                width: 100%;
+            }
+		}
+
+        input, textarea, button {
+            margin-top: 1em;
+            padding: 1em 1em;
+            border-radius: 30px;
+            border: none;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+        }
+
+        &__button {
+            min-width: 130px;
+            width: 30%;
+            color: colors.$pure-white;
+            background-color: colors.$main-color;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: colors.$second-color;
+            }
+        }
+
+        @media (min-width: 768px) {
+            &__box {
+                flex-direction: row;
+                gap: 1em;
+            }
+        }
+	}
 }
