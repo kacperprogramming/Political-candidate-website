@@ -474,7 +474,9 @@ main .contact__box {
 main .contact__box-input {
   width: 100%;
 }
-main .contact input, main .contact textarea, main .contact button {
+main .contact input,
+main .contact textarea,
+main .contact button {
   margin-top: 1em;
   padding: 1em 1em;
   border-radius: 30px;
@@ -499,4 +501,44 @@ main .contact__button:hover {
     flex-direction: row;
     gap: 1em;
   }
+}
+
+.footer {
+  background-color: rgb(205, 205, 205);
+}
+.footer__first-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__first-part img {
+  max-width: 300px;
+  width: 50%;
+}
+.footer__second-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1em;
+}
+.footer__second-part a {
+  color: #000;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+@media (min-width: 552px) {
+  .footer__second-part a {
+    font-size: 3.2rem;
+  }
+}
+.footer__info {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2em;
+}
+.footer hr {
+  height: 1px;
+  border: none;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
